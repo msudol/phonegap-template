@@ -11,8 +11,7 @@ The development environment of this application is Apache Cordova / PhoneGap.
 * Node.js
 * Cordova CLI
 * Android SDK (For local testing on Android)
-* PhoneGap Build Account 
-* GitLab Cloud Account
+* PhoneGap Build Account (Optional)
 
 ## Client Libraries
 
