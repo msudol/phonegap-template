@@ -13,8 +13,7 @@ The development environment of this application is Apache Cordova / PhoneGap, an
 * Node.js
 * Cordova CLI
 * Android SDK (For local testing on Android)
-* PhoneGap Build Account 
-* GitLab Cloud Account
+* PhoneGap Build Account (Optional)
 
 ## Client Libraries
 
@@ -25,5 +24,4 @@ The following client libraries are used to facilitate the end user experience of
 * jQuery 3.3.1
 * Font Awesome Icons
 * Google Roboto Font
-
 
