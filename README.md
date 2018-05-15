@@ -25,3 +25,10 @@ The following client libraries are used to facilitate the end user experience of
 * Font Awesome Icons
 * Google Roboto Font
 
+## How-To
+
+The documentation is currently in the code, the pages are commented and it should be easy to follow for most web developers.
+
+## Testing
+
+This template is designed in a way that it can be tested in a browser without any cordova/phonegap, android, or ios emulators installed. Simply open /www/index.html in Firefox (Chrome will fail due to CORS issues) and browse the page locally.  You may also server from a web server.  Any mobile application specific code and plugins added will fail to work from the PC browser.
