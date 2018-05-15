@@ -1,0 +1,76 @@
+<!-- 
+
+This is the english language bootstrap navbar and menu template. 
+
+1. Edit in the marked edit sections, there are 2 available: Logo and Menu
+
+2. All menu items that will link to a page should have the class "menuItem", if it does not have "menuItem" it will not activate a link.
+
+3. Set any menu links with the "menuItem" class with the following attribute:  data-page="somepage"
+    - "somepage" is a reference to the page that will be loaded in www/pages/en/somepage.html
+
+-->
+
+<!-- Fixed navbar -->
+
+
+<span class="nav navbar-brand">
+
+    <!-- Edit Logo Section -->  
+
+    <img src="img/logo.png" class="logo">
+
+    <!-- End Edit Logo Section -->      
+
+</span>
+
+
+
+<span id="page_title" class="nav navbar-text navbar-title"></span>
+
+
+<button id="app_nav" class="nav navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>  
+
+
+<div class="collapse navbar-collapse" id="navbarCollapse">
+
+    <ul class="navbar-nav mr-auto">
+
+        <!-- Editable Menu Section -->
+
+        <li class="nav-item">
+            <a class="nav-link menuItem" data-page="welcome" href="#">Welcome</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link menuItem" data-page="second_page" href="#">Second Page</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link menuItem" data-page="third_page" href="#">Last Page</a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown Example</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item menuItem" data-page="welcome" href="#">Welcome Page</a>
+                    <a class="dropdown-item menuItem" data-page="second_page" href="#">Second Page</a>
+                    <a class="dropdown-item menuItem" data-page="third_page" href="#">Last Page</a>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link menuItem" data-page="login" href="#">Logout</a>
+        </li>
+
+        <!-- End Editable Menu Section -->
+
+    </ul>
+</div>
+    
+
+
+
+

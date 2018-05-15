@@ -1,0 +1,110 @@
+/*
+ *
+ * Main style sheet 
+ * 
+ * Only edit if you know what you are doing.
+ *
+ */
+ 
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+/* App Defaults CSS - Should not need to edit.
+-------------------------------------------------- */
+html body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */   
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.app_page {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.app_page.nomenu {
+    margin-top: 0px
+}
+
+#app_nav {
+    visibility: hidden;
+}
+
+header .logo {
+    height: 40px;
+}
+
+#page_title { 
+    visibility: hidden;
+}
+
+
+/* NavBar & Dropdown CSS
+-------------------------------------------------- */
+.navbar-title {
+    padding-right: 56px;  /* bad hack to get centered */
+}
+
+.footer-center {
+    padding: 0px 20px;
+}
+
+.header-background {
+    border-bottom: 1px solid #000;
+    background: #fff;
+}
+
+.footer-background {
+    border-top: 1px solid #000;
+    background: #fff;
+}
+
+
+/* Pager */
+.pager-wrapper {
+    padding: 5px 25px;
+}
+
+
+/* onReady bar */
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+
+/* Custom CSS - Any new CSS should be added here */
+

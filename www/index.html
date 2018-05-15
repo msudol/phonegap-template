@@ -3,61 +3,95 @@
 
     <head>
     
+        <!--
+
+        This is the index page. It should not need to be edited at all. Most of the content is dynamically loaded.
+
+        -->
+        
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: style-src 'self' 'unsafe-inline'; media-src *">
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap://ready file://* * 'unsafe-inline' 'unsafe-eval' data:;
+															img-src * 'unsafe-inline' 'unsafe-eval' data:;
+															style-src * 'unsafe-inline' 'unsafe-eval' data:;">	
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <meta http-equiv="Access-Control-Allow-Origin" content="*">
 
         <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-
+        <link rel="stylesheet" href="rcss/bootstrap.min.css">
+        
+        <!-- Font Awesome 4.0 CSS -->
+        <link rel="stylesheet" href="assets/fontawesome/fontawesome-all.css" >
+        
+        <!-- Roboto Font  -->
+        <link href="css/Roboto.css">                 
+    
         <!-- Other CSS -->
-        <link rel="stylesheet" type="text/css" href="css/test.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">
         
         <!-- Added to demonstrate merges -->
         <link rel="stylesheet" type="text/css" href="css/platform.css">
   
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-        <script type="text/javascript" src="js/popper.min.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="rjs/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="rjs/popper.min.js"></script>
+        <script type="text/javascript" src="rjs/bootstrap.min.js"></script>
         
         <!-- Cordova JavaScript -->
         <script type="text/javascript" src="cordova.js"></script>
-    
-        <!-- Following line added to demonstrate merges -->
-        <script type="text/javascript" src="js/platform.js"></script>
-        
+   
         <!-- App Javascript -->
-        <script type="text/javascript" src="js/test.js"></script>
+        <script type="text/javascript" src="js/pageman.js"></script>
+        <script type="text/javascript" src="js/menuhandler.js"></script>
+        <script type="text/javascript" src="js/footerhandler.js"></script>
+        <script type="text/javascript" src="js/formhandler.js"></script>
+        <script type="text/javascript" src="js/buttonhandler.js"></script>
+        <script type="text/javascript" src="js/appcb.js"></script>
+        
+        <!-- Load app.js last -->
+        <script type="text/javascript" src="js/app.js"></script>
 
-        <title>Phonegap Template</title>
+        <title>Template App</title>
         
     </head>
     
     <body>
+   
+        <!-- Header Div: Content is dynamically loaded, DO NOT EDIT -->
+        <header>
             
-        <div id='loader'>
-          <div class="spinner"></div>
-        </div>
-          
-        <!-- Begin Test.js to demonstrate merges -->
-        <h1 id="appFullName"></h1>
-          
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>      
-        <!-- End Test.js -->  
+            <nav id="app_main_header" class="navbar navbar-light fixed-top main-nav header-background">
+                
+            </nav>
+            
+        </header>
+
+    
+    
+        <!-- Content Div: Content is dynamically loaded, DO NOT EDIT -->
+        <main role="main" class="container">
+
+            <div id="app_main_content" class="container">
+
+            </div>
         
-        
-        <div id="app_main" class="container">
-                                
-        </div>
-        
+        </main>
+
+    
+    
+        <!-- Footer Div: Content is dynamically loaded, DO NOT EDIT -->
+        <footer id="app_footer" class="footer">
+            
+            <nav id="app_main_footer" class="navbar navbar-light fixed-bottom footer-background">
+                
+            </nav>
+            
+        </footer>
+            
+
     </body>
     
 </html>
