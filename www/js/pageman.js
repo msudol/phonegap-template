@@ -34,6 +34,13 @@ var pageMan = {
 
         // get the data-menu attribute of the page div
         var menu = el.find(".app_page").data("menu") || "empty";
+
+        // get the data-nav attribute of the page div
+        var bg = el.find(".app_page").data("bg");
+
+        // set page background
+        console.log("Setting page background to: " + bg);
+        $("body").css('background', bg);
         
         // set the footer if it exists
         if ((menu !== undefined) && (menu !== null)) {

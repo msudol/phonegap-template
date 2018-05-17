@@ -29,7 +29,7 @@ var footerHandler = {
 
         var el = $("#app_main_footer");
         
-        // attempt to run an appcb.callback if it's set in the data
+        // attempt to run an app.callback if it's set in the data
         var cb = el.find(".app_footer").data("callback");
         var fn = appcb[cb];   
         if(typeof fn === 'function') {

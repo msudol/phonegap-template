@@ -29,13 +29,13 @@ var menuHandler = {
         
         // collapse any uncollapsed navbar
         $('#navbarCollapse').collapse('hide');
-        
+
         // get the data-title attribute of the page div
         var title = page.find(".app_page").data("title");
         
         // get the data-nav attribute of the page div
         var nav = page.find(".app_page").data("nav");
-        
+                
         // set page titles
         console.log("Current page title: " + title);
         $("#page_title").html(title);
